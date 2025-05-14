@@ -1,0 +1,140 @@
+\usepackage{comment} % Многострочный комментарий
+
+\usepackage[T2A]{fontenc}        % Поддержка кириллицы в PDFLaTeX
+\usepackage[utf8]{inputenc}      % Кодировка исходного .tex
+\usepackage[english,russian]{babel} %% многоязыковая вёрстка
+
+\usepackage{indentfirst}
+\frenchspacing
+
+\renewcommand{\epsilon}{\ensuremath{\varepsilon}}
+\renewcommand{\phi}{\ensuremath{\varphi}}
+\renewcommand{\kappa}{\ensuremath{\varkappa}}
+\renewcommand{\le}{\ensuremath{\leqslant}}
+\renewcommand{\leq}{\ensuremath{\leqslant}}
+\renewcommand{\ge}{\ensuremath{\geqslant}}
+\renewcommand{\geq}{\ensuremath{\geqslant}}
+\renewcommand{\emptyset}{\varnothing}
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{float}
+\usepackage{icomma} % "Умная" запятая
+\usepackage{mathtext} % Русские буквы в матрежиме
+\usepackage{dsfont} % Математические символы
+\usepackage{pgfplots}
+
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Работа с картинками
+\usepackage{graphicx}
+\graphicspath{{images/}{images2/}}
+\setlength\fboxsep{3pt}
+\setlength\fboxrule{1pt}
+\usepackage{wrapfig}
+
+%%% Таблицы
+\usepackage{array,tabularx,tabulary,booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+
+%%% Теоремы
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{proposition}[theorem]{Утверждение}
+\theoremstyle{definition}
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem{problem}{Задача}[section]
+\theoremstyle{remark}
+\newtheorem*{nonum}{Решение}
+
+%%% Программирование
+\usepackage{etoolbox}
+
+%%% Разметка страницы
+\usepackage{geometry}
+\geometry{top=25mm,bottom=35mm,left=35mm,right=20mm,nohead,footskip=10mm}
+\usepackage{indentfirst}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{soul}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+   unicode=true,
+   pdftitle={Заголовок},
+   pdfauthor={Автор},
+  pdfsubject={Тема},
+   pdfcreator={Создатель},
+   pdfproducer={Производитель},
+   pdfkeywords={keyword1,key2,key3},
+   colorlinks=true,
+   linkcolor=black,
+   citecolor=black,
+   filecolor=magenta,
+   urlcolor=black
+}
+
+\usepackage{csquotes}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+%%% Код
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codeorange}{rgb}{1,0.25,0}
+\lstdefinestyle{mystyle}{
+  inputencoding=utf8x,
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{codeorange},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  captionpos=t,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+}
+\lstset{style=mystyle}
+\DeclareCaptionFormat{listing}{#1#2\\#3}
+\captionsetup[lstlisting]{justification=centering,format=listing,labelsep=period}
+
+\usepackage{csvsimple}
+\usepackage[round]{natbib}
+\setlength{\bibsep}{0.0pt}
+\setlength\extrarowheight{2pt}
+
+
+\usetikzlibrary{
+  shapes.geometric,
+  arrows.meta,
+  positioning,
+  fit,
+  backgrounds
+}
+
+% Общие стили
+\tikzset{
+  rect/.style      = {draw, fill=white, thick, rectangle, rounded corners, minimum height=2em, text width=3cm, align=center},
+  cyl/.style       = {draw, fill=white, thick, cylinder, cylinder uses custom fill, cylinder body fill=white, cylinder end fill=white, aspect=0.25, minimum height=2.5cm, minimum width=1cm, align=center},
+  arrow/.style     = {thick, -{Latex}},
+  stage/.style     = {draw, dashed, inner sep=0.5em, rounded corners},
+  title/.style     = {font=\bfseries}
+}
