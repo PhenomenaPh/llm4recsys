@@ -1,2 +1,4 @@
 data/modified_data/interactions.parquet filter=lfs diff=lfs merge=lfs -text
 data/interactions.csv filter=lfs diff=lfs merge=lfs -text
+data/*.csv filter=lfs diff=lfs merge=lfs -text
+data/modified_data/*.parquet filter=lfs diff=lfs merge=lfs -text
