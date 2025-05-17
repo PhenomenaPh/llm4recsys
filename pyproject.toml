@@ -3,13 +3,14 @@ name = "llm4recsys"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
-    "altair>=5.5.0",
+    "cupy-cuda12x>=13.4.1",
     "ipykernel>=6.29.5",
     "ipython>=9.2.0",
+    "ipywidgets>=8.1.7",
     "keybert>=0.9.0",
-    "keyphrase-vectorizers",
+    "keyphrase-vectorizers>=0.0.13",
     "matplotlib>=3.10.3",
     "nltk>=3.9.1",
     "pandas>=2.2.3",
@@ -18,7 +19,6 @@ dependencies = [
     "pymorphy3>=2.0.3",
     "scikit-learn>=1.6.1",
     "seaborn>=0.13.2",
-    "sentence-transformers>=4.1.0",
-    "spacy[apple]>=3.8.4",
-    "transformers>=4.49.0",
+    "sentence-transformers>=4.1",
+    "spacy>=3.8.4",
 ]
