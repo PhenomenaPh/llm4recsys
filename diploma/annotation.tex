@@ -1,0 +1,32 @@
+\section*{Аннотация}
+
+Выпускная квалификационная работа посвящена разработке и оценке эффективности применения больших языковых моделей для решения задачи персонализированных рекомендаций контента. Целью исследования является создание интеллектуальной рекомендательной системы, способной решать проблему замкнутости традиционных подходов и обеспечивать пользователям возможность исследования новых областей интересов.
+
+В рамках работы была разработана двухуровневая архитектура на основе семантической кластеризации контента и адаптации большой языковой модели для генерации персонализированных переходов между кластерами интересов.
+
+Методологическую основу составила гибридная архитектура, объединяющая создание семантических эмбеддингов контента с помощью модели SentenceTransformer, иерархическую кластеризацию на основе алгоритма balanced-split и параметрически-эффективное дообучение языковой модели Llama-3.1-8B с использованием LoRA-архитектуры.
+
+Эмпирическая база включает открытый датасет MTS Kion Dataset, содержащий данные о 5.5 миллионах взаимодействий 962 тысяч пользователей с 15.7 тысячами фильмов.
+
+Полученные результаты демонстрируют высокую эффективность предложенного подхода: дообученная модель достигла значения Article Match Rate на уровне 99.6\%, при этом применение LoRA позволило сократить количество обучаемых параметров до 2.05\% от общего объема модели. Результаты подтверждают способность больших языковых моделей генерировать семантически корректные рекомендации, успешно решая проблему замкнутости рекомендательных систем.
+
+\textbf{Ключевые слова}
+
+Большие языковые модели, рекомендательные системы, иерархическая кластеризация, LoRA, персонализация, семантические эмбеддинги, замкнутость рекомендательных систем 
+
+\newpage
+\section*{Abstract}
+
+This thesis is devoted to the development and evaluation of the effectiveness of applying large language models to solve the problem of personalized content recommendations. The research aims to create an intelligent recommendation system capable of addressing the filter bubble problem of traditional approaches and providing users with the opportunity to explore new areas of interest.
+
+A two-level architecture was developed based on semantic content clustering and adaptation of a large language model for generating personalized transitions between interest clusters.
+
+The methodological foundation consisted of a hybrid architecture combining semantic content embeddings creation using the SentenceTransformer model, hierarchical clustering based on the balanced-split algorithm, and parameter-efficient fine-tuning of the Llama-3.1-8B language model using LoRA architecture.
+
+The empirical base includes the open MTS Kion Dataset containing data on 5.5 million interactions of 962 thousand users with 15.7 thousand movies.
+
+The obtained results demonstrate high effectiveness of the proposed approach: the fine-tuned model achieved an Article Match Rate of 99.6\%, while the application of LoRA reduced the number of trainable parameters to 2.05\% of the total model volume. The results confirm the ability of large language models to generate semantically correct recommendations, successfully solving the filter bubble problem of recommendation systems.
+
+\textbf{Keywords}
+
+Large language models, recommendation systems, hierarchical clustering, LoRA, personalization, semantic embeddings, filter bubble problem

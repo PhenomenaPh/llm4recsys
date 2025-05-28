@@ -1,61 +1,47 @@
-\documentclass[12pt,a4paper]{extreport}
-\input{config.tex}
+%!TEX program = xelatex
 
-\begin{document}
+\documentclass[a4paper,14pt]{extarticle}
+\author{Хутиев Рустэм Русланович \\ Куликовских Денис}
+\title{Поиск оптимального равновесия на рынке такси}
 
-\pagestyle{empty}
+\date{\today}
 
-\begin{center}
-\textbf{ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \\
-"НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ \\
-"ВЫСШАЯ ШКОЛА ЭКОНОМИКИ" \\
-ФАКУЛЬТЕТ КОМПЬЮТЕРНЫХ НАУК}
+\input{cfg} % Пакеты и параметры документа
 
-\vspace{2cm}
+\begin{document} % Конец преамбулы, начало документа
+\pagenumbering{gobble} % Отключает нумерацию страниц
+\include{titlepage} 
+\tableofcontents 
+\newcommand{\anonsection}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newpage
 
-\textbf{МАГИСТЕРСКАЯ ДИССЕРТАЦИЯ}
+\include{annotation}
+\newpage
 
-\vspace{1.5cm}
-
-\begin{doublespace}
-\textbf{	Исследование больших языковых моделей для задач рекомендательных систем} 
-\end{doublespace}
-
-\vspace{0.5cm}
-
-\begin{doublespace}
-\textbf{Exploring Large Language Models for Recommender Systems} \\
-\end{doublespace}
-
-\vspace{1cm}
-
-по направлению подготовки 01.04.02 Прикладная математика и информатика \\
-образовательная программа «Финансовые технологии и анализ данных»
-
-\vspace{1cm}
-
-\begin{flushright}
-\begin{tabular}{l}
-\textbf{Научный руководитель}\\
-T-bank\\
-Ведущий исследователь-разработчик RecSys \\
-По направлению E-commerce\\
-Лашинин О.А.\\ \hline
-\end{tabular}
-\end{flushright}
-
-\vspace{1cm}
-
-\begin{flushright}
-\begin{tabular}{l}
-\textbf{Студент} \\
-Хутиев Р. Р. \qquad \qquad \qquad \\ \hline
-\end{tabular}
-\end{flushright}
+\pagenumbering{arabic} % Включает нумерацию страниц с 1
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
 
 
-Москва 2025
+\input{introduction.tex} % Введение
+\newpage
 
-\end{center}
+\section*{Обзор литературы}
+\addcontentsline{toc}{section}{Обзор литературы}
+\input{literature.tex} % Обзор литературы
+\newpage
+
+\section*{Построение модели}
+\addcontentsline{toc}{section}{Построение модели}
+
+\input{model.tex} % Модель
+\newpage
+\input{end.tex}
+\newpage
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{bibliography}
 
 \end{document}

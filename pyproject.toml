@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "cupy-cuda12x>=13.4.1",
+    "faiss-cpu>=1.11.0",
     "ipykernel>=6.29.5",
     "ipython>=9.2.0",
     "ipywidgets>=8.1.7",
@@ -13,6 +13,7 @@ dependencies = [
     "keyphrase-vectorizers>=0.0.13",
     "matplotlib>=3.10.3",
     "nltk>=3.9.1",
+    "openai>=1.79.0",
     "pandas>=2.2.3",
     "polars>=1.29.0",
     "pyarrow>=20.0.0",
@@ -20,5 +21,4 @@ dependencies = [
     "scikit-learn>=1.6.1",
     "seaborn>=0.13.2",
     "sentence-transformers>=4.1",
-    "spacy>=3.8.4",
 ]
